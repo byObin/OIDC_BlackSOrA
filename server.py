@@ -13,14 +13,11 @@ def main():
 def connecting():
     print("[STARTING] Server is starting.")
     
-    """ Staring a TCP socket. """
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     print(ADDR)
-    """ Bind the IP and PORT to the server. """
     server.bind(ADDR)
     print(IP)
     
-    """ Server is listening, i.e., server is now waiting for the client to connected. """
     server.listen()
     print("[LISTENING] Server is listening.")
     global conn
@@ -28,22 +25,17 @@ def connecting():
 
     
     while True:
-        """ Server has accepted the connection from the client. """
         conn, addr = server.accept()
         print(f"[NEW CONNECTION] {addr} connected.")
         while True:
             if receiving() is False:
                 break
 
-
-
-        """ Closing the connection from the client. """
         conn.close()
         print(f"[DISCONNECTED] {addr} disconnected.")
 
 
 def receiving():
-    """ Receiving the filename, filedata from the client. """
     data = conn.recv(4)
     len = int.from_bytes(data, "little")
     if len == 0:
