@@ -1,13 +1,11 @@
-package com.jojoldu.book.springboot.web;
+package com.webpage.book.springboot.web;
 
-import com.jojoldu.book.springboot.service.posts.PostsService;
-import com.jojoldu.book.springboot.web.dto.PostsResponseDto;
+import com.webpage.book.springboot.service.posts.PostsService;
+import com.webpage.book.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RequiredArgsConstructor

@@ -1,7 +1,6 @@
 package com.webpage.book.springboot.web;
 
 import com.webpage.book.springboot.web.domain.posts.Posts;
-import com.webpage.book.springboot.web.domain.posts.PostsRepository;
 import com.webpage.book.springboot.web.dto.PostsSaveRequestDto;
 import com.webpage.book.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.jupiter.api.AfterEach;

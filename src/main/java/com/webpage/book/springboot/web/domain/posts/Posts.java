@@ -20,16 +20,16 @@ public class Posts extends BaseTimeEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 500, nullable = false) // 테이블 칼럼 옵션 설정
+    @Column(length = 500, nullable = false)
     private String title;
 
-    @Column(columnDefinition = "TEXT", length = 500, nullable = false)
+    @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
     private String author;
 
-    @Builder // 빌더 패턴 클래스 생성
-    public Posts(String title, String content, String author){
+    @Builder
+    public Posts(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
