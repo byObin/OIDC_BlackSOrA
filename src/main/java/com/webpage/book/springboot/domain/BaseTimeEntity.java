@@ -1,4 +1,4 @@
-package com.jojoldu.book.springboot.domain;
+package com.webpage.book.springboot.domain;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

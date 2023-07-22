@@ -1,7 +1,8 @@
 package com.webpage.book.springboot.service.posts;
 
-import com.webpage.book.springboot.web.domain.posts.Posts;
-import com.webpage.book.springboot.web.domain.posts.PostsRepository;
+import com.webpage.book.springboot.domain.posts.Posts;
+import com.webpage.book.springboot.domain.posts.PostsRepository;
+
 import com.webpage.book.springboot.web.dto.PostsListResponseDto;
 import com.webpage.book.springboot.web.dto.PostsResponseDto;
 import com.webpage.book.springboot.web.dto.PostsSaveRequestDto;

@@ -1,6 +1,6 @@
 package com.webpage.book.springboot.domain.posts;
 
-import com.webpage.book.springboot.web.domain.BaseTimeEntity;
+import com.webpage.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
